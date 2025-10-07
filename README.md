@@ -83,7 +83,7 @@ O link deste README.md no GitHub é o ponto de partida para o professor acessar 
 | Requisito | Artefato | Link para Acesso Público |
 | :--- | :--- | :--- |
 | *Gestão do Projeto* | Quadro Trello (Kanban) | **https://trello.com/b/XZdXLumg/calculadora-custos** |
-| *Documentação Detalhada* | Relatório de Testes (QA) e Manuais | *https://drive.google.com/drive/folders/13UbOnyw4RiO_hTPTSuC29P_A9eV45OaH?usp=sharing* |
+| *Documentação Detalhada* | Relatório de Testes (QA) e Manuais | *https://drive.google.com/drive/folders/13UbOnyw4RiO_hTPTSuC29P_A9eV45OaH?hl=pt-br* |
 
 ---
 
