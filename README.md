@@ -72,7 +72,7 @@ O programa exibe os seguintes resultados:
 | *Alexandre Mário Soares* | [span_21](start_span)Desenvolvedor[span_21](end_span) |
 | *Pedro Henrique Reis* | [span_22](start_span)Desenvolvedor[span_22](end_span) |
 | *Ana Carolina Santos* | [span_23](start_span)Documentação[span_23](end_span) |
-| *Zacarias da Mata* |  .[span24](start span).Q.A (Testes).(span 24). |
+| *Zacarias da Mata* | [span_24](start_span)Q.A (Testes)[span_24](end_span) |
 
 ---
 
