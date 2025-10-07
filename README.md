@@ -89,7 +89,7 @@ O link deste README.md no GitHub é o ponto de partida para o professor acessar 
 
 ## Relatório de Qualidade (QA) - Sumário
 
-A equipe de Q.A. (Sibelly Saraiva, Zacarias da Mata e José Kauã) [span_24](start_span)[span_25](start_span)[span 26](start span]executou testes no OnlineGDB[span_24](end_span)[span_25][span 26](end_span).
+A equipe de Q.A. (Sibelly Saraiva, Zacarias da Mata e José Kauã) [span_24](start_span)[span_25](start_span)[span_26](start_span)executou testes no OnlineGDB[span_24](end_span)[span_25][span 26](end_span).
 
 * *[span_26](start_span)Objetivo do Teste:* Verificar se o programa calcula corretamente o tempo de viagem, a quantidade de combustível necessária e o custo total, incluindo a redução de autonomia para velocidades acima de $100 \text{ km/h}$[span_26](end_span).
 * *[span_27](start_span)Procedimento:* O programa foi executado com entradas válidas em 4 cenários diferentes[span_27](end_span).
