@@ -1,0 +1,85 @@
+#include <iostream>  
+#include <iomanip>   
+#include <cmath>     
+
+
+
+int main() {
+   
+    const double SPEED_LIMIT_FOR_PENALTY = 100.0;
+    const double AUTONOMY_REDUCTION_FACTOR = 0.90;
+
+   
+    double averageSpeed;
+    double vehicleAutonomy;
+    double distance;
+    double pricePerLiter;
+
+    double travelTime;
+    double fuelNeeded;
+    double totalCost;
+    double originalAutonomy; 
+
+    
+    std::cout << std::fixed << std::setprecision(2);
+
+   
+    do {
+        std::cout << "Digite a velocidade media do veiculo (km/h): ";
+        std::cin >> averageSpeed;
+        if (averageSpeed <= 0) {
+            std::cout << "Erro: A velocidade media deve ser maior que zero.\n";
+        }
+    } while (averageSpeed <= 0);
+
+    do {
+        std::cout << "Digite a autonomia do veiculo (km/l): ";
+        std::cin >> vehicleAutonomy;
+        if (vehicleAutonomy <= 0) {
+            std::cout << "Erro: A autonomia deve ser maior que zero.\n";
+        }
+    } while (vehicleAutonomy <= 0);
+    
+    originalAutonomy = vehicleAutonomy; 
+
+    do {
+        std::cout << "Digite a distancia do percurso (km): ";
+        std::cin >> distance;
+        if (distance <= 0) {
+            std::cout << "Erro: A distancia deve ser maior que zero.\n";
+        }
+    } while (distance <= 0);
+
+    do {
+        std::cout << "Digite o valor pago por litro de combustivel (R$): ";
+        std::cin >> pricePerLiter;
+        if (pricePerLiter < 0) {
+            std::cout << "Erro: O valor por litro nao pode ser negativo.\n";
+        }
+    } while (pricePerLiter < 0);
+
+   
+    if (averageSpeed > SPEED_LIMIT_FOR_PENALTY) {
+        vehicleAutonomy = vehicleAutonomy * AUTONOMY_REDUCTION_FACTOR;
+        std::cout << "\nAlerta: Velocidade acima de 100 km/h! A autonomia foi reduzida para "
+                  << vehicleAutonomy << " km/l.\n";
+    }
+
+   
+    travelTime = distance / averageSpeed;
+    fuelNeeded = distance / vehicleAutonomy;
+    totalCost = fuelNeeded * pricePerLiter;
+    
+    int hours = static_cast<int>(travelTime);
+    int minutes = static_cast<int>(round((travelTime - hours) * 60));
+
+
+    std::cout << "\n=== RESULTADOS DA VIAGEM ===" << std::endl;
+    std::cout << "Distancia a percorrer: " << distance << " km" << std::endl;
+    std::cout << "Autonomia considerada: " << vehicleAutonomy << " km/l" << std::endl;
+    std::cout << "Tempo de deslocamento estimado: " << hours << " hora(s) e " << minutes << " minuto(s)" << std::endl;
+    std::cout << "Quantidade de combustivel necessaria: " << fuelNeeded << " litros" << std::endl;
+    std::cout << "Custo total do abastecimento: R$ " << totalCost << std::endl;
+
+    return 0;
+}
